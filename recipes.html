@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>All Recipes</h1>
+
+<!-- Form to add a new recipe -->
+<div class="add-recipe">
+  <h2>Add a New Recipe</h2>
+
+  <label>Recipe Name:</label><br>
+  <input id="recipeName" type="text"><br><br>
+
+  <label>Ingredients:</label><br>
+  <textarea id="recipeIngredients"></textarea><br><br>
+
+  <label>Steps:</label><br>
+  <textarea id="recipeSteps"></textarea><br><br>
+
+  <button onclick="addRecipe()">Add Recipe</button>
+</div>
+
+<hr>
+
+<!-- Where new recipes will appear -->
+<div id="recipeList">
+  <h2>Recipes</h2>
+
+  <div class="recipe-card">
+    <h3>Chocolate Chip Cookies</h3>
+    <p><strong>Ingredients:</strong> Sugar, flour, chocolate chips, egg</p>
+    <p><strong>Steps:</strong> Mix, shape, bake</p>
+    <p><a href="cookies.html">View Full Recipe Page</a></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
